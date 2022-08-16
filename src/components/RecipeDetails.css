@@ -1,0 +1,24 @@
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links li {
+  list-style: none;
+}
+
+.ingredient {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.measure {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.instr {
+  font-size: 1.5rem;
+}

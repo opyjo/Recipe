@@ -1,0 +1,19 @@
+.recipeImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.recipeText {
+  font-size: 1.5rem;
+}
+
+.recipeContainer {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.noResult {
+  text-align: center;
+  font-size: 2rem;
+}

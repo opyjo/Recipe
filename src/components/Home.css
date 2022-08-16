@@ -1,0 +1,72 @@
+.searchBox {
+  font-size: 1.4rem;
+  height: auto;
+}
+
+/* The styling required for the inut element is to reset it. This is done by setting the following properties: */
+
+.searchBox input {
+  padding: 12px;
+  width: 50rem;
+  font-size: 1.5rem;
+  margin-left: 20rem;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 900px) {
+  .searchBox input {
+    width: 75%;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .searchBox input {
+    width: 50%;
+    margin-left: 2rem;
+  }
+}
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1.3rem;
+  margin: 0.4rem 1rem;
+  background-color: #e98074;
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0, 0.1);
+
+  text-transform: uppercase;
+}
+
+.btn:active {
+  background-color: #c88d86;
+}
+
+.btn:hover {
+  background-color: #c88d86;
+}
+
+.btnCook {
+  position: relative;
+}
+
+.container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.wrapper {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
