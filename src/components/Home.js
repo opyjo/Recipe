@@ -6,7 +6,7 @@ import RecipeList from "./RecipeList";
 const URL = "https://www.themealdb.com/api/json/v1/1/filter.php?";
 
 const Home = ({ getDetails }) => {
-  const [term, setTerm] = useState(null);
+  const [term, setTerm] = useState("");
   const [recipeList, setRecipeList] = useState([]);
 
   const onChangeHandler = (e) => {

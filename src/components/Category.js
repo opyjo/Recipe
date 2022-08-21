@@ -6,7 +6,6 @@ import "./Category.css";
 const recipeURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 
 const Category = () => {
-  console.count();
   const [recipe, setRecipe] = useState([]);
 
   useEffect(() => {

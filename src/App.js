@@ -4,7 +4,6 @@ import axios from "axios";
 import "./App.css";
 import Home from "./components/Home";
 import Category from "./components/Category";
-import Random from "./components/Random";
 import RecipeDetails from "./components/RecipeDetails";
 
 export default function App() {
@@ -18,7 +17,7 @@ export default function App() {
   };
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <nav className="nav wrapper ">
         <div>
           <Link to="/">mealsperience</Link>
@@ -41,7 +40,7 @@ export default function App() {
             recipeDetails && <RecipeDetails recipeDetails={recipeDetails} />
           }
         />
-        <Route path="/random" element={<Random />} />
+        <Route path="/random" element={<RecipeDetails />} />
         <Route path="/category" element={<Category />} />
       </Routes>
     </Router>

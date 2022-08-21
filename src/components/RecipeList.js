@@ -9,7 +9,7 @@ const RecipeList = ({ recipeList, getDetails }) => {
       </div>
     );
   });
-  return <>{renderedRecipeList}</>;
+  return <>{renderedRecipeList} </>;
 };
 
 export default RecipeList;
