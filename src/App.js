@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Category from "./components/Category";
 import RecipeDetails from "./components/RecipeDetails";
+import Random from "./components/Random";
 
 export default function App() {
   const [recipeDetails, setRecipeDetails] = useState([]);
@@ -40,7 +41,7 @@ export default function App() {
             recipeDetails && <RecipeDetails recipeDetails={recipeDetails} />
           }
         />
-        <Route path="/random" element={<RecipeDetails />} />
+        <Route path="/random" element={<Random />} />
         <Route path="/category" element={<Category />} />
       </Routes>
     </Router>

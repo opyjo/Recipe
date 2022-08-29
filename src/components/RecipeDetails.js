@@ -1,21 +1,7 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "./RecipeDetails.css";
 import ReactPlayer from "react-player";
-const randomURL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
-const RecipeDetails = () => {
-  const [recipeDetails, setRecipeDetails] = useState([]);
-
-  useEffect(() => {
-    const getRandomRecipe = async () => {
-      const response = await axios.get(randomURL);
-      setRecipeDetails(response.data.meals[0]);
-    };
-
-    getRandomRecipe().catch(console.err);
-  }, []);
-
+const RecipeDetails = ({ recipeDetails }) => {
   return (
     <div className="wrapper">
       <h1>Meal Area: {recipeDetails.strArea}</h1>

@@ -35,7 +35,7 @@ const Home = ({ getDetails }) => {
         </button>
       </div>
       <div className="container wrapper">
-        {/* the below code ensure that if the ingredient selected is not found, The user will be notified A ternary operator is used to check if the recipeList is empty or not */}
+        {/* the below code ensure that if the ingredient selected is not found, The user will be notified. A ternary operator is used to check if the recipeList is empty or not */}
         {recipeList ? (
           <RecipeList getDetails={getDetails} recipeList={recipeList} />
         ) : (
